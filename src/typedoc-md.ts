@@ -141,13 +141,13 @@ export class DocGenerator {
     type(meta, allowLinks=true) {
         let res = meta.name;
         if (meta.typeArguments && meta.typeArguments.length > 0) {
-
+            // todo: add typeArgs
         }
         if (allowLinks && meta.type === 'reference' && meta.id) {
             const ref = this.linkTable[meta.id];
             res = this.ref(ref, res);
         }
-        return res;
+        return res || '<unsupported-type>';
     }
 
     typeParam(meta) {
