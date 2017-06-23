@@ -110,6 +110,13 @@ export class DocGenerator {
             '===',
             ''
         );
+        if (meta.signatures) {
+            lines.push(
+                'Signature',
+                '---',
+                ...this.getSignatureCode(meta.signatures[0])
+            );
+        }      
         if (meta.children && meta.children.length > 0) {
             const props = meta.children.filter(prop => prop.kind = types.Property);
             lines.push(
@@ -133,7 +140,7 @@ export class DocGenerator {
 
     type(meta, allowLinks=true) {
         let res = meta.name;
-        if (res.typeArguments && res.typeArguments.length > 0) {
+        if (meta.typeArguments && meta.typeArguments.length > 0) {
 
         }
         if (allowLinks && meta.type === 'reference' && meta.id) {
