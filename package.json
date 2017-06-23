@@ -1,0 +1,24 @@
+{
+  "name": "typedoc-markdown",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "fs-extra": "^3.0.1",
+    "typedoc": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/int0h/typedoc-markdown.git"
+  },
+  "author": "int0h",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/int0h/typedoc-markdown/issues"
+  },
+  "homepage": "https://github.com/int0h/typedoc-markdown#readme"
+}
