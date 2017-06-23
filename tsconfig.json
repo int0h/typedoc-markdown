@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "lib": [            
+            "es5",
+            "es2015.promise",
+            "scripthost",
+            "dom"
+        ],
+        "experimentalDecorators": true,
+        "outDir": "./dist/",
+        "declaration": true,
+        "module": "commonjs",
+        "inlineSourceMap": true,
+        "inlineSources": true
+    },
+    "include": [
+        "./src/**.ts"
+    ]
+}
